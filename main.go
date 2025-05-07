@@ -14,7 +14,9 @@ func main() {
 		switch {
 		case progArgs[1] == "add" && len(progArgs) == 3:
 			functionnalities.Add(progArgs[2])
-		}
 
+		case progArgs[1] == "delete" && len(progArgs) == 3:
+			functionnalities.Delete(progArgs[2])
+		}
 	}
 }
